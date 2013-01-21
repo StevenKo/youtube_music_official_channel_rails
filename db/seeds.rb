@@ -22,7 +22,7 @@ a.save
 
 c = Channel.create(:name => "HIM International Music 華研國際音樂", :is_singer => false, :link => "http://www.youtube.com/user/himservice", :area_id => 1)
   c2 = Channel.create(:name => "HIMSHERO(S.H.E)", :is_singer => true, :link => "http://www.youtube.com/user/HIMSHERO", :area_id => 1)
-c.add_relative_channel << c2
+c.add_relative_channel(c2)
 
 c = Channel.create(:name => "華納音樂 Warner Music Taiwan", :is_singer => false, :link => "http://www.youtube.com/user/warnertaiwan", :area_id => 1)
 c = Channel.create(:name => "杰威爾音樂官方頻道 JVR Music Official Channel", :is_singer => false, :link => "http://www.youtube.com/user/JVRmuzic", :area_id => 1)

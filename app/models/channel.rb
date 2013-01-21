@@ -7,8 +7,8 @@ class Channel < ActiveRecord::Base
   has_many :direct_channels, :through => :direct_channels_ship
   has_many :inverse_channels,  :through => :inverse_channels_ship
   
-  scope :area_singer_channels, lambda { |area_id| where('area_id = (?) AND is_singer = true', area_id) }
-  scope :area_not_singer_channels, lambda { |area_id| where('area_id = (?) AND is_singer = false', area_id) }
+  scope :area_channels, lambda { |area_id| where('area_id = (?)', area_id) }
+  # scope :area_not_singer_channels, lambda { |area_id| where('area_id = (?) AND is_singer = false', area_id) }
 
   def add_relative_channel channel
     self.direct_channels << channel

@@ -25,7 +25,7 @@ end
 gem 'jquery-rails'
 
 # api
-gem 'rabl'
+# gem 'rabl'
 
 # 爬蟲
 gem 'nokogiri'
@@ -44,9 +44,9 @@ gem 'capistrano-ext'
 # cron table
 gem 'whenever', :require => false
 
-#分頁
-gem 'will_paginate'
+# #分頁
+# gem 'will_paginate'
 
-gem 'sidekiq'
-gem 'sinatra', require: false
-gem 'slim'
+# gem 'sidekiq'
+# gem 'sinatra', require: false
+# gem 'slim'
