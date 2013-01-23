@@ -31,11 +31,11 @@ ActiveRecord::Schema.define(:version => 20130110050215) do
 
   create_table "channels", :force => true do |t|
     t.string   "name"
-    t.boolean  "is_singer"
+    t.boolean  "is_singer",  :default => false
     t.string   "link"
     t.integer  "area_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
   end
 
   add_index "channels", ["area_id"], :name => "index_channels_on_area_id"
