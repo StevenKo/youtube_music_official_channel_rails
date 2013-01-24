@@ -36,7 +36,7 @@ ActiveRecord::Schema.define(:version => 20130124125642) do
     t.integer  "area_id"
     t.datetime "created_at",                    :null => false
     t.datetime "updated_at",                    :null => false
-    t.string   "tumbnail"
+    t.string   "thumbnail"
   end
 
   add_index "channels", ["area_id"], :name => "index_channels_on_area_id"
